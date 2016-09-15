@@ -1,0 +1,25 @@
+Restarting process ...
+Hours of hacking await!
+If I break, you can:
+  1. Restart:           M-x haskell-process-restart
+  2. Configure logging: C-h v haskell-process-log (useful for debugging)
+  3. General config:    M-x customize-mode
+  4. Hide these tips:   C-h v haskell-process-show-debug-tips
+λ> 
+λ> :l app/Main.hs
+
+app/Main.hs:5:8: parse error on input ‘filestore’
+Failed, modules loaded: none.
+λ> :l app/Main.hs
+
+app/Main.hs:5:8:
+    Could not find module ‘Data.FileStore’
+    Use -v to see a list of the files searched for.
+Failed, modules loaded: none.
+λ> :l app/Main.hs
+
+app/Main.hs:5:8:
+    Could not find module ‘Data.FileStore’
+    Use -v to see a list of the files searched for.
+Failed, modules loaded: none.
+λ> 
